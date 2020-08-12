@@ -1,0 +1,96 @@
+
+/*Cor de fundo do header*/
+.page-header{
+    background-color: var(--color-primary);
+    /*o display: flex coloca um conteudo ao lado do outro*/
+    display: flex;
+    /*coloca o flex por coluna*/
+    flex-direction: column;
+
+}
+
+/*Configuração da imagem "setinha"*/
+.page-header .top-bar-container{
+    width: 90%;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    /*separar as imagens nas extremidades*/
+    justify-content: space-between;
+
+    padding: 1.6rem 0;
+
+}
+
+/*configuração da imagem "Proffy"*/
+.page-header .top-bar-container > img {
+    height: 1.6rem;
+}
+
+/*tamanho do botão "setinha" e efeito*/
+.page-header .top-bar-container a{
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+/*configuraão do efeito do botão "setinha*/
+.page-header .top=bar-container a:hover{
+    opacity: 0.6;
+}
+
+/*dimensóes do layout header referente a frase "Esses são os proffys disponiveis"*/
+.page-header .top-bar-container{
+    height: 1.6rem;
+}
+
+/*dimensóes do layout header referente a frase "Esses são os proffys disponiveis"*/
+.page-header .header-content {
+    width: 90%;
+    margin: 3.2rem auto;
+
+    position: relative;
+}
+
+/*Configuração do tamanho e peso da fonte referente a frase "Esses são os proffys disponiveis"*/
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem;
+    color:var(--color-text-in-primary);
+}
+
+
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
+}
+
+/*configuração para o browser*/
+@media (min-width:700px){
+    .page-header{
+        height: 340px;
+    }
+    .page-header .top-bar-container{
+        max-width: 1100px;
+    }
+    .page-header .header-content{
+        max-width: 740px;
+
+        margin: 0 auto;
+
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .page-header .header-content strong{
+        max-width: 350px;
+    }
+
+}
